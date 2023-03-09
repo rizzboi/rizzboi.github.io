@@ -6,7 +6,7 @@
     var pass = "faca";
     let timeout;
     question = prompt("enter password (nama panggilan aku ke kamu)");
-    if (question == pass && question != null) {
+    if (question == pass) {
       txt = "haiii " + pass + " sayanggg";
       alert(txt);
       alert("how's your day sayang?");
@@ -14,20 +14,19 @@
       alert("I know it must be hard sometimes");
       alert("but you'll get over it");
       alert("I'm here for you");
+      alert("call me if you need anything");
+      alert("or even if u don't need anything, just call me");
+      alert("or text me");
       alert("aku mau denger cerita kamu hari ini");
       alert("cepet cerita, aku nungguin di LINE 👺");
       alert("dah yhhh, byeee. ily♥");
+    } else if (question != pass && question != null) {
+      alert("salah, jamet.");
     } else {
-      timeout = setTimeout(alertFunction, 3000);
-      function alertFunction() {
-        alert("function cancelled, terminating session...");
-      }
+      alert("function cancelled, Click OK to exit");
+      window.close();
     }
 
     // alert(txt);
-  </script>
-  <script>
-    alert("Click 'OK' to close this window");
-    window.close();
   </script>
 </html>
